@@ -1,0 +1,87 @@
+/* ===== remove padrões do navegador ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(255, 223, 184);
+}
+
+/* --- MENU SUPERIOR  --- */
+.menu {
+    background: rgba(166, 51, 10);
+    padding: 15px 25px;
+    color: rgb(255, 223, 184);
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+/* Botão do menu */
+.menu button {
+    background: none;
+    border: none;
+    color: rgb(255, 223, 184);
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* ===== MENU LATERAL ===== */
+/* Caixa que aparece/esconde ao clicar */
+#menu-lateral {
+    background: #d35400;
+    width: 250px;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Lista do menu */
+#menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espaçamento entre itens */
+#menu-lateral li {
+    margin-bottom: 15px;
+}
+
+
+/* Links do menu */
+#menu-lateral a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+#menu-lateral a:hover {
+    padding-left: 10px;
+    color: rgb(255, 223, 184);
+}
+
+/* Classe usada para esconder elementos */
+.hidden {
+    display: none !important;
+}

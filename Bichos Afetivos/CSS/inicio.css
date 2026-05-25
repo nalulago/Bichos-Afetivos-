@@ -1,0 +1,386 @@
+/* ===== remove padrões do navegador ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(255, 223, 184);
+}
+
+/* --- MENU SUPERIOR  --- */
+.menu {
+    background: rgba(166, 51, 10);
+    padding: 15px 25px;
+    color: rgb(255, 223, 184);
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+/* Botão do menu */
+.menu button {
+    background: none;
+    border: none;
+    color: rgb(255, 223, 184);
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* ===== MENU LATERAL ===== */
+/* Caixa que aparece/esconde ao clicar */
+#menu-lateral {
+    background: #d35400;
+    width: 250px;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Lista do menu */
+#menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espaçamento entre itens */
+#menu-lateral li {
+    margin-bottom: 15px;
+}
+
+
+/* Links do menu */
+#menu-lateral a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+#menu-lateral a:hover {
+    padding-left: 10px;
+    color: rgb(255, 223, 184);
+}
+
+/* Classe usada para esconder elementos */
+.hidden {
+    display: none !important;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* TÍTULO */
+.container-titulo {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 220px;
+    overflow: hidden;
+    padding-left: 40px;
+}
+
+.titulo-principal {
+    font-size: 55px;
+    color: rgba(166, 51, 10);
+}
+
+/* Parte destacada do título */
+.cor-afetivos {
+    color: rgba(191,127,48)
+}
+
+/* Imagens decorativas */
+.imagem-mancha {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.imagem-linha {
+    width: 100%;
+    height: 40px;
+    display: block;
+}
+
+/* GRID DOS CARDS */
+
+.pets .card {
+    background: rgba(166, 51, 10) !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+    min-height: auto !important;
+}
+
+.pets .card:hover {
+    transform: translateY(-8px) scale(1.00);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+.pets .card button {
+    display: block;
+    margin: 15px auto 0 auto;
+
+}
+
+.pets .card button:hover {
+    background: rgba(191,127,48);
+    transform: scale(1.05);
+}
+
+.pets {
+    display: grid;
+
+   /*Definição de colunas do grid, 4 pets por linha */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Botões gerais */
+button {
+    margin-top: 10px;
+    background: rgba(217,84,7);
+    border: none;
+    padding:10px;
+    color: rgb(255, 223, 184);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* BOTÃO VER MAIS  */
+.ver-mais-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ver-mais-container button {
+    background: rgba(166, 51, 10);
+    color: rgb(255, 223, 184);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ver-mais-container button:hover {
+    background: rgba(217,84,7);
+}
+
+/* SEÇÃO DE CUIDADOS */
+.secao-cuidados {
+    padding: 40px 20px;
+    background-color: rgb(255, 223, 184);
+    text-align: center;
+}
+
+.titulo-cuidados {
+    font-size: 40px;
+    color: rgba(217,84,7);
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgba(191,127,48);
+    padding: 30px;
+    border-radius: 20px;
+    color: rgb(255, 223, 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn-ver-mais {
+    background-color: rgba(166, 51, 10);
+    color: rgb(255, 223, 184);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    align-self: center;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-ver-mais:hover {
+    background-color: rgba(217,84,7);
+}
+
+.secao-itens {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgb(255, 223, 184);
+}
+
+.titulo-sessao {
+    font-size: 40px;
+    color: rgba(191,127,48);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.fundo-laranja {
+    background-color: rgba(217,84,7);
+    border-radius: 40px;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid-itens {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.item-card {
+    background-color: rgb(255, 223, 184);
+    border-radius: 20px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.item-card img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.item-card span {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+}
+
+.espaco-vazio {
+    grid-column: span 1;
+}
+
+.fundo-laranja {
+    background-color: rgba(217,84,7) !important;
+    border-radius: 40px;
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    position: relative;
+    min-height: 550px;
+}
+
+.grid-itens {
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.item-card {
+    background-color: rgb(255, 255, 255)!important;
+    border-radius: 25px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-card span {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.item-card img {
+    max-width:280px;
+    max-height:100px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.espaco-vazio {
+    grid-column: span 2;
+    pointer-events: none;
+}
+
+/*posiciona uma imagem decorativa dentro da .fundo-laranja,
+sem afetar as imagens dos cards
+*/
+.fundo-laranja img:not(.item-card img) {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width:300px;
+    z-index: 10;
+    pointer-events: none;
+}
