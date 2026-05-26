@@ -40,7 +40,7 @@ const canil = document.getElementById("canil");
 const pets = {
     1: {
         nome: "Daisy",
-        imagem: "IMG/dog.png",
+        imagem: "../IMG/IMG PETS/pet1.png",
         idade: "3 anos",
         raca: "SRD",
         cor: "Preto",
@@ -49,7 +49,7 @@ const pets = {
     },
     2: {
         nome: "Max",
-        imagem: "IMG/dog.png",
+        imagem: "../IMG/IMG PETS/pet2.png",
         idade: "2 anos",
         raca: "SRD",
         cor: "Marrom",
@@ -58,7 +58,7 @@ const pets = {
     },
     3: {
         nome: "Luna",
-        imagem: "IMG/dog.png",
+        imagem: "../IMG/IMG PETS/pet3.png",
         idade: "4 anos",
         raca: "SRD",
         cor: "Branco",
@@ -67,7 +67,7 @@ const pets = {
     },
     4: {
         nome: "Thor",
-        imagem: "IMG/dog.png",
+        imagem: "../IMG/IMG PETS/pet4.png",
         idade: "5 anos",
         raca: "SRD",
         cor: "Cinza",
