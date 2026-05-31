@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Adoção</title>
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+<body>
+
+<section class="form-container">
+
+    <!-- LOGO + NOME -->
+    <div class="topo-form">
+        <img src="./IMG/iconeL.jpg" class="logo">
+        <h1>BICHOS AFETIVOS</h1>
+    </div>
+
+    <h2>FORMULÁRIO DE ADOÇÃO</h2>
+
+    <form>
+
+        <!-- DADOS PESSOAIS -->
+        <input type="text" placeholder="Nome completo">
+        <input type="text" placeholder="CPF">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Telefone (Whatsapp)">
+        <input type="text" placeholder="Endereço">
+
+        <div class="linha">
+            <input type="text" placeholder="Cidade">
+            <input type="text" placeholder="Estado">
+        </div>
+
+
+        <!-- CASA -->
+        <h3>CASA E ESTILO DE VIDA</h3>
+
+        <p>Tipo de moradia:</p>
+        <label><input type="radio" name="moradia"> Casa</label>
+        <label><input type="radio" name="moradia"> Apartamento</label>
+        <label><input type="radio" name="moradia"> Chácara ou zona rural</label>
+
+        <input type="text" placeholder="Alugado ou próprio?">
+
+        <p>Possui quintal?</p>
+        <label><input type="radio" name="quintal"> Sim</label>
+        <label><input type="radio" name="quintal"> Não</label>
+
+        <p>Se sim, ele é seguro (muros altos, telas, portão fechado)?</p>
+        <label><input type="radio" name="seguro"> Sim</label>
+        <label><input type="radio" name="seguro"> Não</label>
+
+        <p>Há telas nas janelas e portões estão bem fechados?</p>
+        <label><input type="radio" name="telas"> Sim</label>
+        <label><input type="radio" name="telas"> Não</label>
+
+        <p>Há risco de fuga ou acesso à rua sem supervisão?</p>
+        <label><input type="radio" name="risco"> Sim</label>
+        <label><input type="radio" name="risco"> Não</label>
+
+        <!-- EXPERIÊNCIA -->
+        <h3>EXPERIÊNCIA COM ANIMAIS</h3>
+
+        <p>Já teve ou tem animais de estimação?</p>
+        <label><input type="radio" name="experiencia"> Sim</label>
+        <label><input type="radio" name="experiencia"> Não</label>
+
+        <p>Se sim, o que aconteceu com eles?</p>
+        <input type="text" placeholder="Explique aqui">
+
+        <p>Possui outros animais atualmente?</p>
+        <label><input type="radio" name="outros"> Sim</label>
+        <label><input type="radio" name="outros"> Não</label>
+
+        <p>Se sim, quais?</p>
+        <input type="text" placeholder="Descreva">
+
+        <!-- DISPONIBILIDADE -->
+        <h3>ESTILO DE VIDA E DISPONIBILIDADE</h3>
+
+        <p>Tem tempo diário para cuidar do animal?</p>
+        <label><input type="radio" name="tempo"> Sim</label>
+        <label><input type="radio" name="tempo"> Não</label>
+
+        <p>O animal ficará sozinho por quanto tempo?</p>
+        <input type="text" placeholder="Ex: 4 horas por dia">
+
+        <p>Está disposto(a) a arcar com custos (ração, veterinário, vacinas)?</p>
+        <label><input type="radio" name="custos"> Sim</label>
+        <label><input type="radio" name="custos"> Não</label>
+
+        <p>Todos da casa concordam com a adoção?</p>
+        <label><input type="radio" name="familia"> Sim</label>
+        <label><input type="radio" name="familia"> Não</label>
+
+        <!-- BOTÃO -->
+        <button type="submit">Enviar</button>
+
+    </form>
+</section>
+
+</body>
+</html>
