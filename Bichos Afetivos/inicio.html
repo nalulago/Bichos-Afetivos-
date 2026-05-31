@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bichos Afetivos</title>
-
     <link rel="stylesheet" href="CSS/inicio.css">
-
+     
+    <!-- FavIcon-->
     <link rel="icon" href="IMG/ICONE.png" type="image/png">
 </head>
 
 <body>
 
+    <!--Menu lateral-->
 <header>
-
     <div class="menu">
         <button onclick="toggleMenu()">☰ Menu</button>
     </div>
-
     <nav id="menu-lateral" class="hidden">
         <ul>
             <li><a href="inicio.html">Página Inicial</a></li>
             <li><a href="PETS/pets.html">Animais Disponíveis</a></li>
-
             <!-- LINKS EXTERNOS -->
             <li><a href="https://digitalvet.com.br/castracao-caes-gatos/" target="_blank">Castração</a></li>
             <li><a href="https://hospitalcaoegato.com.br/blog/cuidados/vacinacao-em-pets-guia-completo/" target="_blank">Vacinação</a></li>
@@ -30,17 +28,15 @@
             <li><a href="https://www.doglife.com.br/veterinario/catalao-go" target="_blank">Veterinário</a></li>
             <li><a href="https://hospitalcaoegato.com.br/blog/dicas/pets-saude-mental-a-importancia-de-cuidar-da-mente-dos-nossos-peludos/" target="_blank">Saúde Mental</a></li>
             <li><a href="https://drauziovarella.uol.com.br/psiquiatria/como-os-pets-influenciam-no-bem-estar-dos-seres-humanos/" target="_blank">Tutor</a></li>
-
             <li><a href="sobre.html">Sobre o Projeto </a></li>
         </ul>
     </nav>
-
 </header>
 
+<!--Imagem e Titulo inicial-->
 <section class="banner">
     <img src="IMG/BANNER.png" alt="Cachorro e gato">
 </section>
-
 <section class="container-titulo">
     <div class="bloco-texto">
         <h1 class="titulo-principal">
@@ -48,114 +44,94 @@
             <span class="cor-afetivos">AFETIVOS</span>
         </h1>
     </div>
-
     <img src="IMG/LARANJA_BANNER.png" class="imagem-mancha" alt="Detalhe laranja">
 </section>
-
 <img src="IMG/LINHA.png" class="imagem-linha" alt="Linha decorativa">
 
+<!--Cards Principais-->
 <section class="pets">
-
 <div class="card" onclick="abrirPet(1)">
-    <img src="IMG/dog.png" alt="Daisy">
-    <h3>Daisy</h3>
-    <p>Idade: 3 anos</p>
+    <img src="IMG/IMG PETS/pet1.jpg">
+    <h3>Sobrancheila</h3>
+    <p>Idade: 2 meses </p>
     <p>Raça: SRD</p>
-    <p>Cor: Preto</p>
-    <p>Personalidade: Fofa e teimosa</p>
-    <p>Canil Responsável: Canil Amor Animal</p>
+    <p>Personalidade: Fofa e expressiva</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(2)">
-    <img src="IMG/dog.png" alt="Max">
-    <h3>Max</h3>
-    <p>Idade: 2 anos</p>
-    <p>Raça: SRD</p>
-    <p>Cor: Marrom</p>
-    <p>Personalidade: Brincalhão e energético</p>
-    <p>Canil Responsável: Canil Vida Pet</p>
+    <img src="IMG/IMG PETS/pet2.jpg">
+    <h3>Chupetão</h3>
+    <p>Idade: 3 anos</p>
+    <p>Raça: Pastor Alemão</p>
+    <p>Personalidade: Brincalhão e dengoso</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(3)">
-    <img src="IMG/dog.png" alt="Luna">
-    <h3>Luna</h3>
+    <img src="IMG/IMG PETS/pet3.jpg">
+    <h3>Belle</h3>
     <p>Idade: 4 anos</p>
     <p>Raça: SRD</p>
-    <p>Cor: Branco</p>
     <p>Personalidade: Calma e carinhosa</p>
-    <p>Canil Responsável: Canil Patinhas Felizes</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(4)">
-    <img src="IMG/dog.png" alt="Thor">
-    <h3>Thor</h3>
-    <p>Idade: 5 anos</p>
+    <img src="IMG/IMG PETS/pet4.jpg">
+    <h3>Django </h3>
+    <p>Idade: 13 anos</p>
     <p>Raça: SRD</p>
-    <p>Cor: Cinza</p>
-    <p>Personalidade: Protetor e forte</p>
-    <p>Canil Responsável: Canil Guardiões Pet</p>
+    <p>Personalidade: Brincalhão e sorridente </p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(5)">
-    <img src="IMG/IMG PETS/pet5.png" alt="Leoncio">
-    <h3>Leoncio Matolonio</h3>
+    <img src="IMG/IMG PETS/pet5.png">
+    <h3>Tabby</h3>
     <p>Idade: 1 mês</p>
     <p>Raça: SRD</p>
-    <p>Cor: Bege</p>
-    <p>Personalidade: Pequeno e curioso</p>
-    <p>Canil Responsável: Canil Pequenos Amigos</p>
+    <p>Personalidade: Dramatico</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(6)">
-    <img src="IMG/dog.png" alt="Bob">
-    <h3>Bob</h3>
-    <p>Idade: 3 anos</p>
+    <img src="IMG/IMG PETS/pet6.jpg">
+    <h3>Salada</h3>
+    <p>Idade: 12 anos</p>
     <p>Raça: SRD</p>
-    <p>Cor: Preto e branco</p>
-    <p>Personalidade: Alegre e amigável</p>
-    <p>Canil Responsável: Canil Amor Animal</p>
+    <p>Personalidade: Tímido e antissocial com visitas</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(7)">
-    <img src="IMG/dog.png" alt="Nina">
-    <h3>Nina</h3>
-    <p>Idade: 2 anos</p>
+    <img src="IMG/IMG PETS/pet7.jpg">
+    <h3>Encarador</h3>
+    <p>Idade: 4 anos</p>
     <p>Raça: SRD</p>
-    <p>Cor: Caramelo</p>
-    <p>Personalidade: Carinhosa e dócil</p>
-    <p>Canil Responsável: Canil Vida Pet</p>
+    <p>Personalidade: Ativo e desconfiado</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
 
 <div class="card" onclick="abrirPet(8)">
-    <img src="IMG/dog.png" alt="Luke">
-    <h3>Luke</h3>
-    <p>Idade: 4 anos</p>
+    <img src="IMG/IMG PETS/pet8.jpg">
+    <h3>Milka</h3>
+    <p>Idade: 2 meses</p>
     <p>Raça: SRD</p>
-    <p>Cor: Marrom escuro</p>
     <p>Personalidade: Inteligente e curioso</p>
-    <p>Canil Responsável: Canil Patinhas Felizes</p>
     <button onclick="event.stopPropagation(); adotar()">Adotar</button>
 </div>
-
 </section>
 
+<!--Botão para ver mais pets na proxima pagina-->
 <div class="ver-mais-container">
     <button onclick="verMais()">Ver mais</button>
 </div>
 
+<!--Links com informações para os adotantes-->
 <section class="secao-cuidados">
-
     <h2 class="titulo-cuidados">CUIDADOS</h2>
-
     <div class="container-cards">
-        
         <article class="card principal">
             <h3>Vacinação</h3>
             <p>A vacinação é a melhor forma de proteger seu pet contra doenças graves como a raiva e a cinomose.</p>
@@ -191,13 +167,13 @@
             <p>Os pets ajudam no bem-estar humano.</p>
             <a href="https://drauziovarella.uol.com.br/psiquiatria/como-os-pets-influenciam-no-bem-estar-dos-seres-humanos/" target="_blank" class="btn-ver-mais">Ver mais</a>
         </article>
-
     </div>
 </section>
 
+
+<!--Itens para os pets-->
 <section class="secao-itens">
     <h2 class="titulo-sessao">ITENS</h2>
-
     <div class="fundo-laranja">
         <div class="grid-itens">
             <div class="item-card"><img src="IMG/brinquedos.png"><span>Brinquedos</span></div>
@@ -206,15 +182,12 @@
             <div class="item-card"><img src="IMG/potes.png"><span>Potes</span></div>
             <div class="item-card"><img src="IMG/shampoo.png"><span>Banho</span></div> 
             <div class="item-card"><img src="IMG/comida.png"><span>Comida</span></div>
-            
             <div class="espaco-vazio"></div> 
-
             <div class="item-card"><img src="IMG/caixa-transporte.png"><span>Caixa de Transporte</span></div>
             <div class="item-card"><img src="IMG/brinquedos-gatos.png"><span>Brinquedos Gatos</span></div>
             <div class="item-card"><img src="IMG/roupas.png"><span>Roupas</span></div>
             <div class="item-card"><img src="IMG/caixa-areia.png"><span>Caixa de Areia</span></div>
         </div>
-
         <img src="IMG/banner2.png" class="pets-itens">
     </div>
 </section>
