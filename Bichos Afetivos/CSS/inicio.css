@@ -1,17 +1,17 @@
-/* ===== remove padrões do navegador ===== */
+/* Configuração geral da página */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Configuração geral da página */
 body {
     font-family: Arial, sans-serif;
     background: rgb(255, 223, 184);
 }
 
-/* --- MENU SUPERIOR  --- */
+
+/* menu*/
 .menu {
     background: rgba(166, 51, 10);
     padding: 15px 25px;
@@ -25,7 +25,6 @@ body {
     z-index: 100;
 }
 
-/* Botão do menu */
 .menu button {
     background: none;
     border: none;
@@ -38,9 +37,6 @@ body {
     gap: 10px;
 }
 
-
-/* ===== MENU LATERAL ===== */
-/* Caixa que aparece/esconde ao clicar */
 #menu-lateral {
     background: #d35400;
     width: 250px;
@@ -53,20 +49,16 @@ body {
     z-index: 1000;
 }
 
-/* Lista do menu */
 #menu-lateral ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Espaçamento entre itens */
 #menu-lateral li {
     margin-bottom: 15px;
 }
 
-
-/* Links do menu */
 #menu-lateral a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -75,24 +67,21 @@ body {
     transition: 0.3s;
 }
 
-/* Efeito ao passar o mouse */
 #menu-lateral a:hover {
     padding-left: 10px;
     color: rgb(255, 223, 184);
 }
 
-/* Classe usada para esconder elementos */
 .hidden {
     display: none !important;
 }
 
-/* BANNER */
+/* Parte principal da pagina*/
 .banner img {
     width: 100%;
     display: block;
 }
 
-/* TÍTULO */
 .container-titulo {
     background-color: rgb(255, 255, 255);
     position: relative;
@@ -108,12 +97,10 @@ body {
     color: rgba(166, 51, 10);
 }
 
-/* Parte destacada do título */
 .cor-afetivos {
     color: rgba(191,127,48)
 }
 
-/* Imagens decorativas */
 .imagem-mancha {
     position: absolute;
     right: 0;
@@ -127,8 +114,7 @@ body {
     display: block;
 }
 
-/* GRID DOS CARDS */
-
+/* Cards dos pets */
 .pets .card {
     background: rgba(166, 51, 10) !important;
     padding: 10px !important;
@@ -164,7 +150,20 @@ body {
 
 .card img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
+}
+
+.pets .card h3 {
+    font-size: 40px;
+    margin: 3px 0 1px 0;
+}
+
+.pets .card p {
+    font-size: 13px;
+    line-height: 1.1;
+    margin: 1px 0;
 }
 
 /* Botões gerais */
@@ -265,6 +264,8 @@ button {
     background-color: rgba(217,84,7);
 }
 
+
+/*Itens*/
 .secao-itens {
     text-align: center;
     padding: 50px 0;
@@ -373,9 +374,6 @@ button {
     pointer-events: none;
 }
 
-/*posiciona uma imagem decorativa dentro da .fundo-laranja,
-sem afetar as imagens dos cards
-*/
 .fundo-laranja img:not(.item-card img) {
     position: absolute;
     bottom: 0;
@@ -384,3 +382,5 @@ sem afetar as imagens dos cards
     z-index: 10;
     pointer-events: none;
 }
+
+
